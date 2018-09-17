@@ -56,6 +56,28 @@ public class Array {
 	}
 
 	/**
+	 * @Title: update
+	 * @Description: 更新一个指定位置的元素
+	 * @param index
+	 * @param item
+	 * @return int[]
+	 */
+	public int[] update(int index, int item) {
+		array[index] = item;
+		return array;
+	}
+
+	/**
+	 * @Title: get
+	 * @Description: 获取指定位置的元素
+	 * @param @param index
+	 * @return int
+	 */
+	public int get(int index) {
+		return array[index];
+	}
+
+	/**
 	 * @Title: add
 	 * @Description: 向数组结尾添加一个元素
 	 * @param item
@@ -91,12 +113,4 @@ public class Array {
 		delete(0);
 	}
 
-	/**
-	 * @Title: sort
-	 * @Description: 排序，default:从小到大
-	 * @return int[]
-	 */
-	public int[] sort() {
-		return array;
-	}
 }
